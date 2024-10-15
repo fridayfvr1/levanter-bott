@@ -1,6 +1,7 @@
 const { Client, logger } = require('./lib/client')
 const { DATABASE, VERSION } = require('./config')
 const { stopInstance } = require('./lib/pm2')
+const keep_alive = ('./keep_alive.js')
 
 const start = async () => {
   logger.info(`levanter ${VERSION}`)
